@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tutorial</title>
+    <style>
+.container{
+    height:500px;
+    width:100%;
+    border:2px solid black;
+    display:flex;/*Intialize the container as a flexbox-->*/
+    /*Flex Properties for Flex container*/
+    flex-direction: column;/*Putting row won't do anything because that's BY DAFAULT*/
+    flex-direction: row-reverse;/*The latter property overrides the former one*/
+    flex-wrap: wrap;/*flex-wrap is used so that the flex-items wrap themselves while changing the size of the page.*/
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+
+    align-items:center;
+    align-items:flex-end;
+    align-items:stretch;  
+}
+.item{
+    background-color: blanchedalmond;
+    border:2px solid red;
+    margin:10px;
+    padding:3px;
+    width:100px;
+    height:100px;
+}
+#item6{
+    order: 1;
+}
+/*Order helps you to set which item should come in which place.
+Only those items which are selected will be changing their order.
+Those items which are not selected will come first and after them the order will start. */
+#item2{
+    order: 2;
+    flex-basis:300px;/*Changes the width or height of container item depending on the flex-direction.
+    If flex-direction is set to row, flex-basis will control width.
+    If flex-direction is set to column, flex-basis will control height.
+}
+#item3{
+    order: 3;
+}
+#item4{
+    order: 4;
+    flex-grow: 2;/*As the size of the screen increases, the container item box grows if enough space is available for it.
+    Negative numbers are invalid=>Therefore use flex-shrink for reducing the size of the box.*/
+}
+
+    </style>
+</head>
+<body>
+    <h1>Let's learn about Flexbox!</h1>
+    <div class="container"><!--We have applied Flex property in this container class.-->
+<div class="item" id="item1">First box</div>  <!--all these 6 items inside the container will automatically become flex items.-->
+<div class="item" id="item2">Second box</div>
+<div class="item" id="item3">Third box</div>
+<div class="item" id="item4">Fourth box</div>
+<div class="item" id="item5">Fifth box</div>
+<div class="item" id="item6">Sixth box</div>
+    </div>
+</body>
+</html>

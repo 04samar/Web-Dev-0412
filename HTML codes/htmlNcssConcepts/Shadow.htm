@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and text Shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            margin: 30px;
+            padding: 23px 12px;
+            border: 2px solid blueviolet;
+            text-shadow: 3px 3px 3px black;
+            color: white;
+        }
+
+        #card1 {
+            /* There are two ways for adding a file which is in the same folder as the html file. 
+            First way: background-image: url('./Bg4.bmp');
+            Below is the second way. */
+            background-image: url('./Testimg/aquascene1.bmp');
+            opacity: 0.7;
+            /*Box-shadow:offset-x offset-y blur-radius spread-radius color;*/
+            box-shadow: 12px 12px skyblue;
+            /*Down Right Colour*/
+        }
+
+        #card2 {
+            background-image: url('./Testimg/Bg4.bmp');
+            opacity: 0.7;
+            box-shadow: -12px -12px lightgreen;
+            /*Up Left Colour*/
+            text-shadow: -3px -3px 3px black;
+        }
+
+        #card3 {
+            background-image: url('./Testimg/mountscene1.bmp');
+            opacity: 0.7;
+            box-shadow: 12px 12px 20px orangered;
+            /*Down Right Blur Colour*/
+        }
+
+        #card4 {
+            background-image: url('./Testimg/Bg.bmp');
+            opacity: 0.7;
+            box-shadow: 30px 2px orange, 2px 24px blue;
+            /*Down Right Colour1 Down Right Colour2*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <!-- <img src="./Bg4.bmp" -->
+            <!--<img src="C:\Users\samarpreet singh\OneDrive\Desktop\Samcodes\SamJSPractice\Images.bmp\Bg4.bmp">-->
+            <h2>Card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos quasi dolore quidem earum, quod
+                tenetur ad culpa illo officia.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos quasi dolore quidem earum, quod
+                tenetur ad culpa illo officia.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos quasi dolore quidem earum, quod
+                tenetur ad culpa illo officia.</p>
+        </div>
+        <div class="card" id="card4">
+            <h2>Card4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos quasi dolore quidem earum, quod
+                tenetur ad culpa illo officia.</p>
+        </div>
+    </div>
+</body>
+
+</html>

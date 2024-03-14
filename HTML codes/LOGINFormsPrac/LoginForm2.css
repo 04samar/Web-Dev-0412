@@ -1,0 +1,51 @@
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(14, 14, 14);
+}
+#myGreenGround {
+    height: 100vh; /* Set height to 100% of viewport height */
+    width: fit-content; /* Set width according to content */
+    background-color: #a6e0dd;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-left: 80px;
+    padding-right: 80px;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 30px;
+    padding:140px;
+    background-color:rgba(255, 255, 255, 0.457);
+    backdrop-filter:blur(25px);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+header{
+    font-size:20px;
+}
+.form_wrapper1{
+    display:flex;
+    align-items:center;
+    text-align: center;
+    gap:0;
+    border-bottom:solid 2px #29a49e;
+}
+input{
+    height:30px;
+    border:none;
+    outline:none;
+    padding:0 10px;
+}
+button{
+    height:40px;
+    background-color: #36bab3;
+    color:white;
+    border:none;
+    width: 180px;
+    padding:0 20px
+}

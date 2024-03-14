@@ -1,0 +1,50 @@
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
+border:3px solid purple;
+width:1000px;
+margin:auto;
+}
+.item{
+border: 3px solid grey;
+margin:12px 3px;
+padding:12px;
+}
+#fruits{
+    float:left;
+    width:20%;
+}
+#veggies{
+    float:left;
+    width:20%;
+}
+#meds{
+    float:left;
+    width:20%;
+}
+h3{
+    text-align:center;
+}
+.looks{
+    padding:15px;
+    margin:15px;
+    border:none;
+    border-radius: 10px;
+    background-color:azure;
+}
+button{
+    padding:15px;
+    margin:15px;
+    border:none;
+    border-radius: 10px;
+    background-color:azure;
+}
+a{
+text-decoration: none;
+color:rgb(255, 166, 0);
+}
+a:hover{
+color:rgb(170, 102, 234);
+background-color: rgb(236, 228, 228);
+}

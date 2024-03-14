@@ -1,0 +1,62 @@
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 20px;
+    background-color:rgba(255, 255, 255, 0.103);
+    backdrop-filter:blur(25px);
+    padding:70px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    border-radius:35%;
+}
+header{
+    font-size:30px;
+}
+.form_wrapper{
+display:flex;
+align-items:center;
+}
+.triangle{
+    width:40px;
+    height:40px;
+    background-color:white;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.triangle.left{
+    transform: rotate(-90deg);
+}
+.triangle.right{
+    transform: rotate(90deg);
+}
+.triangle.left.btn{
+    background-color: darkred;
+}
+.triangle.right.btn{
+    background-color: darkred;
+}
+input{
+    height:40px;
+    border:none;
+    outline:none;
+    padding:0 10px
+}
+button{
+    height:40px;
+    background-color: darkred;
+    color:white;
+    font-weight:bold;
+    border:none;
+    padding:0 20px
+}
+a{
+    color:white;
+}

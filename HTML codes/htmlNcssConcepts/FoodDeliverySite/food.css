@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+}
+/* Navigation Bar */
+#navbar{
+    display:flex;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.55);
+    width:100%;
+    height:50px;
+    padding:10px 35px;
+    position:absolute;
+    z-index: 999;
+}
+#navbar ul{
+    padding-left: 35px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+#navbar ul li{
+    list-style:none;
+    padding:15px;
+    font-weight: bold;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color:white;
+}
+#navbar ul li a:hover{
+    color:rgb(176, 173, 173);
+}
+
+/* Home Section */
+#home{
+    color:white;
+    position: fixed;
+
+    width:100%;
+    height:400px;
+    background-image: url('./Projimg/mediterranean-cuisine-2378758_1280.jpg');
+    opacity:0.85;
+}
+#homeDown{
+    display:flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 130px;
+}
+#home h1{
+    font-size: 50px;
+}
+#home p{
+    margin:20px;
+    font-size: 20px;
+    font-family:Franklin Gothic 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+}
+#home h2{
+    font-size: 30px;
+}
+#home button{
+margin:15px;
+padding: 5px;
+width: 120px;
+border:none;
+border-radius:20px;
+color:white;
+background-color: rgb(249, 123, 19);
+font-size: 17px;
+}
+
+/* Services Section */
+h2{
+    text-align:center;
+}
+section{
+    display:flex;
+    position: relative;
+    justify-content: space-evenly;
+    margin:5px;
+}
+.serve{
+    display:flex;
+    position: relative;
+    flex-direction:column;
+    width:350px;
+    height:500px;
+    padding:5px;
+    align-items: center;
+
+    border:1.5px solid palevioletred;
+    border-radius: 5px;
+    background-color:rgb(228, 204, 212);
+}
+.serve img{
+border-radius:50%;
+}
+ /* section h2{
+    text-align: center;
+}
+section.serviceBox{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding: 2px;
+    margin:10px;
+    width:100%;
+    height:300px;
+}
+section.serve{
+    justify-content: center;
+    align-items: center;
+    border:2px solid palevioletred;
+    border-radius:5px;
+    width:30%;
+    height:500px;
+    padding:10px;
+} */

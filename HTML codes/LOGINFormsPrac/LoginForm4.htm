@@ -1,0 +1,43 @@
+<!DOCTYPE html> <!--Tells the browser which version of HTML the page is written in.-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"><!--Used to specify character encoding of the document. 
+        UTF-8 is a character encoding capable of representing most characters in the Unicode character set.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--viewport is the name of metadata.
+    And content contains the properties of the viewport.
+width=device-width(Sets the width of the viewport to the width of the device's screen.)
+initial-scale=1.0(it's to make sure that the content appears at an appropriate size initially when the webpage is first loaded.)-->
+    <title>LoginForm4</title>
+    <link rel="stylesheet" href="LoginForm3.css">
+    <script src="https://kit.fontawesome.com/97ebdf5864.js" crossorigin="anonymous"></script>
+</head>
+
+<body background="C:\Users\samarpreet singh\OneDrive\Desktop\Samcodes\SamJSPractice\Images.bmp\Bg10.bmp">
+    <div class="container"> <!--Contains the whole Login box.-->
+        <h1>Login</h1>
+        <form action="">                               
+            <div class="form_wrapper"><!--Give styling to this class. 
+                Will be combining all the inputs in the form so as to get the required login contents.-->
+                <input type="email" required>
+                <label for="">Email</label>
+                <i class="fa-solid fa-envelope"></i> <!--Gives an envelope icon.-->
+            </div>
+            <div class="form_wrapper">
+                <input type="password" required>
+                <label for="">Password</label>
+                <i class="fa-solid fa-lock"></i> <!--Gives a lock icon.-->
+            </div>
+            <p><input type="checkbox"> Remember Me
+                <a href="#">Forgot Password</a>
+            </p>
+            <button>Log in</button>
+            <p> Don't have an account?
+                <a href="#">Register</a>
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>

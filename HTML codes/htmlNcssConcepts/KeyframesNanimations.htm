@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animations</title>
+    <style>
+        /* #container {
+            background-color: aliceblue;
+        }
+
+        #box {
+            width: 250px;
+            height: 250px;
+            background-color: aquamarine;
+            position: relative;
+            animation-name: anime;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: alternative;
+            animation-timing-function: ease-in; ease-out, ease-in-out;
+            animation-delay:2s;
+        }
+
+        @keyframes anime {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 1000px;
+            }
+        }
+        */
+        #container2 {
+            height: 1000px;
+            padding:10px;
+            background-color: beige;
+        }
+
+        #box2 {
+            display:flex;
+            margin: 50px;
+            width: 100px;
+            height: 100px;
+            border:4px dashed darkblue;
+            border-radius:50%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: rgba(43, 161, 245, 0.918);
+            position: relative;
+            /*Rotating Border*/
+            animation: rotateBorder 3s linear infinite, anime2 5s 1s infinite linear forwards;
+            /*Moving Object: in this case Circle*/
+            /*animation-name: anime2;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: alternative;
+            animation-timing-function: ease-in;ease-out, ease-in-out;
+            animation-delay: 1s;*/
+
+            /*Shorthand property for Animation:-
+            animation: animation-name animation-duration animation-timing-function 
+            animation-delay animation-iteration-count animation-fill-mode; */
+            /*Similarly we have transition properties*/
+        }
+        @keyframes rotateBorder{
+            0%{
+                transform:rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes anime2 {
+            0% {
+                top:0px;
+                left:0px;
+            }
+
+            25% {
+                top:0px;
+                left:300px;
+            }
+
+            75% {
+                top:300px;
+                left:300px;
+            }
+
+            100% {
+                top:300px;
+                left:0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="container">
+        <div id="box">This is an expanding box!</div>
+    </div> -->
+    <div id="container2">
+        <div id="box2">This is a moving box!</div>
+    </div>
+</body>
+
+</html>
