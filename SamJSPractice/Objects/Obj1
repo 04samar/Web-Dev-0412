@@ -1,0 +1,30 @@
+/*
+const allUsers=[
+    {firstName:"Naruto", gender:"male"},
+    {firstName:"Sakura", gender:"female"}, 
+    {firstName:"Sasuke", gender:"male"}, 
+    {firstName:"Hinata", gender:"female"}]
+for(let i=0;i<allUsers.length;i++){
+    if(allUsers[i]["gender"]=="male"){
+        console.log(allUsers[i]["firstName"])}}
+        console.log("are male.");
+*/
+// This code is a modified version of the above one where you combine the outputs and make a meaningful sentence.
+
+        const allUsers = [
+            { firstName: "Naruto", gender: "male" },
+            { firstName: "Sakura", gender: "female" },
+            { firstName: "Sasuke", gender: "male" },
+            { firstName: "Hinata", gender: "female" }
+        ];
+        
+        let maleUsers = []; // Array to store male user names
+        
+        for (let i = 0; i < allUsers.length; i++) {
+            if (allUsers[i]["gender"] == "male") {
+                maleUsers.push(allUsers[i]["firstName"]);
+            }
+        }
+        
+        // Print the names of male users
+        console.log(maleUsers.join(" and ") + " are male.");

@@ -1,0 +1,18 @@
+//This is a function to find the largest number in an Array.
+function findLargestNumber(arr){
+    if(arr.length==0)
+    {
+        return "Array is empty.";
+    } 
+    let max=arr[0]; //Assuming the first element is the largest.
+    for(let i=1;i<arr.length;i++)
+    {
+        if(arr[i]>max)
+        max=arr[i]; //Replaces max if the other number is larger.
+    }
+return max;
+}
+const numbers=[234, 124, 8146,89,907];
+console.log("The largest number in the given array is:",findLargestNumber(numbers));
+
+/*The above code has a Time Complexity of O(n) and a Space Complexity of O(1).*/
