@@ -1,0 +1,141 @@
+/* -----------------------Header and Pagelist CSS---------------------------*/
+.header{/* defines the header of all the webpages. */
+    background-color: #f58585b2;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:50px;
+}
+#logo{/* converting the logo to a circular shape */
+    margin:5px;
+    border:1.5px rgb(246, 96, 121) outset;
+    border-radius: 50%;
+}
+#name{/*Defining the color and style of our company name*/
+    font-style: italic;
+    margin-left: 20px;
+    color:aliceblue;
+}
+
+#homepara {
+    position: relative;
+    padding: 50px;
+    align-items: center;
+    justify-items: center;
+}
+h2, h3 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px; /* Add space between headings and paragraphs */
+}
+
+/* Styling for H2 */
+h2 {
+    color: #4e4e4e; /* Dark gray color */
+    font-size: 28px; /* Larger font size */
+    font-weight: bold; /* Bold font weight */
+    text-transform: uppercase; /* Uppercase text */
+    padding-bottom:30px;
+}
+
+/* Styling for H3 */
+h3 {
+    color: #f09c9cef; /* Light gray color */
+    font-size: 24px; /* Slightly smaller font size */
+    font-style: italic; /* Italic font style */
+    padding-top:50px;
+}
+
+/* Styling for paragraphs */
+p {
+    font-size: 18px;
+    line-height: 1.6; /* Adjust line height for better readability */
+    color: #666; /* Medium gray color */
+}
+
+.pagelist {
+    background-color: black;
+    padding: 0 10px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height:35px;
+    margin-bottom:0px;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    margin:20px 50px;;
+    font-weight: 400;
+    font-size: larger;
+    font-style:normal;
+    border-radius:45px;
+}
+/* -----------------------The above code will apply for each and every webpage of our website-------------------------------*/
+
+
+/* ----------------------THIS IS THE STYLING FOR E-COMMERCE WEBSITE ITEMS PAGE : PAGE 2 -------------------------*/
+#itemstyle {
+    margin-top:50px;
+    padding: 20px;
+    display:flex;
+    justify-content: center;
+}
+#tablestyle{
+    align-items:center;
+    justify-items: center;
+    width:80%;
+    height:auto;
+    border:2px solid #f58585fe;
+    border-radius:40px;
+    padding:10px;
+}
+.imgtable{
+    border-radius:40px;
+}
+tr{
+    height:40px;
+}
+th{
+    background-color: #f58585b9;
+    margin:10px;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 1px solid white;
+    color:white;
+    width:200px;
+}
+#bored1{
+border-top-left-radius: 40px;
+}
+#bored2{
+border-bottom-left-radius: 40px;
+}
+#bored3{
+    border-bottom-right-radius: 40px;
+}
+.btext{
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: underline;
+}
+th,td{
+    text-align: center;
+    border:1px solid white;
+}
+.tablestyle2{
+    margin-top:25px;
+    width:100%;
+    height:auto;
+    border:1px solid #f58585b2;
+}
+#tablestyle2{
+    width:100%;
+    height:auto;
+    border:1px solid #f58585b2;
+}
+.pricesborder{
+    border:1px solid #f58585b2;
+}

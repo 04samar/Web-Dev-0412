@@ -1,0 +1,83 @@
+/* --------------------------THIS IS THE STYLING FOR E-COMMERCE WEBSITE SELLERS PAGE : PAGE 3--------------------------*/
+
+#content3{
+    display:flex;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: white;
+} 
+#Sellimg{
+    height:467px;
+    width:400px;
+    border:2px solid black;
+}
+form{
+    height:450px;
+    width:400px;
+    justify-content:center;
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+    border-right:2px solid black;
+    border-left:60px solid white;
+    padding-top:15px;
+}
+.form_group {
+    position: relative;
+    width: 320px;
+    margin: 30px 0;
+    border-bottom: 3px solid black;
+}
+
+.form_group input:focus~label,
+.form_group input:valid~label{
+    top: -5px;
+}
+
+.form_group input {
+    width: 87.5%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    color: black;
+    padding: 0 30px 0 10px;
+}
+.form_group label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: rgb(247, 12, 51);
+    transition: 0.45s;
+    padding-bottom: 10px;
+}
+
+.form_group i {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: #f58585;
+} 
+button {
+    width: 60%;
+    height: 50px;
+    color:white;
+    background-color: #f58585b2;
+    border-radius: 40px;
+    border:none;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top:50px;
+    margin-left:50px;
+}
+
+button:hover {
+    background: rgba(114, 113, 113, 0.3);
+    color: rgb(58, 57, 57);
+}
